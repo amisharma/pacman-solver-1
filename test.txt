@@ -1,0 +1,13 @@
+""" while j:
+  	temp=queue.pop()
+  	cost+=temp[1]
+  	current_state[0]=temp
+  	print corner_check
+  	corner_check.remove(temp)
+  	while not queue.isEmpty():
+  		queue.pop()
+  	for i in corner_check:
+  		queue.push(i,((current_state[0][0]-i[0]) ** 2 + (current_state[0][1] - i[1]) ** 2 ) ** 0.5)
+  	j=j-1"""
+  	
+  	queue.push(i,abs(current_state[0] - i[0]) + abs(current_state[1] - i[1]))
